@@ -1,0 +1,17 @@
+# Does Greater Funding Lead To Better ACT Scores?
+## Scope of your project
+The examination of data from 2017 collected in the United States of America which includes ACT score and school spending data is the scope. This will involve downloading, cleaning, merging, and joining data. The cleaned data set will be placed in Tableau where it will be presented to answer the main research question as well as presenting other findings.
+## Overview
+The PyCharm IDE was used to write code and communicate with GitHub. Pandas was used to clean and manipulate data. Tableau was be used to present data. A comparison of composite ACT scores and money spent per student in all districts produced a p value revealing the connection between the two variables.
+## Data Download and Cleaning
+Data was downloaded directly from the source website and converted to data frames using pandas. Upon inspection, it was clear that the columns that were going to be used to join the data included some errors. Specifically, there were a lot of leading and trailing spaces. So, along with replacing null numeric values with a mean value, the cleaning and merging function included a command to strip all those ancillary white spaces. Once cleaned, the data was joined into a single data frame that was ready for analysis. That data frame was then converted to CSV and imported to Tableau.
+## Tableau
+<div class='tableauPlaceholder' id='viz1753589436856' style='position: relative'><noscript><a href='#'><img alt='More Money = Better ACT? ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CapStoneTab&#47;ACTStory&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='CapStoneTab&#47;ACTStory' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ca&#47;CapStoneTab&#47;ACTStory&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1753589436856');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+## Findings
+There is a strong positive correlation between funds spent per student and the average ACT score, as indicated by a p value of <0.0001. More money does infact lead to higher ACT scores.
+Beyond that there is a weak negative connection between disproportionate spending in different poverty zones.
+
+## Data Sources
+https://nces.ed.gov/ccd/tables/FY17_F33_CEPP_povertyquartile_table_092320.asp 
+https://nces.ed.gov/programs/digest/d21/tables/dt21_226.60.asp 
