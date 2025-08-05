@@ -1,12 +1,5 @@
 import pandas as pd
-import numpy as np
-import matplotlib as plt
-import sqlalchemy
-
 from data.cleaning import clean_and_merge
-
-scores_df = pd.read_csv("data/Average ACT scores and percentage of graduates taking the ACT by state 2017 and 2021.csv")
-spending_df = pd.read_csv("data/expenditures per pupil by public schools 2017 via Nation Center for Education Statistics.csv")
 
 joined_data = clean_and_merge("data/Average ACT scores and percentage of graduates taking the ACT by state 2017 and 2021.csv",
                               "data/expenditures per pupil by public schools 2017 via Nation Center for Education Statistics.csv",
