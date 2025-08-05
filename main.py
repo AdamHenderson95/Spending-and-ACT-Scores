@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import matplotlib as plt
 import sqlalchemy
-from sqlalchemy import create_engine
 
 from data.cleaning import clean_and_merge
 
@@ -17,7 +16,7 @@ year_data = joined_data[joined_data["Year"] == 2017]
 filtered_data = year_data[[
     'State', 'Composite score', 'English score', 'Mathematics score',
     'Reading score', 'Science score', 'All districts',
-    'Low-poverty  districts', 'Low-middle  poverty districts',
-    'High-middle  poverty districts', 'High-poverty  districts'
+    'Low-poverty districts', 'Low-middle poverty districts',
+    'High-middle poverty districts', 'High-poverty districts'
     ]]
 filtered_data.to_csv("data/filtered_data.csv", index=False)
